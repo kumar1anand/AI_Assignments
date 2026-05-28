@@ -34,9 +34,9 @@ class RequestData(BaseModel):
 
 @app.post("/tutor")
 def generate_ans(data: RequestData):
-    client = genai.Client(api_key="AIzaSyApZXmQxTPhsIAUlunhMWVckUbJtyhyyc4")
+    client = genai.Client(api_key="AIzaSyDMsGFxYmm4oni48KmxZ5uhZpfAX62E2MA")
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.5-flash",
         contents=data.prompt,
     )
     return {"generated_answer": response.text}
