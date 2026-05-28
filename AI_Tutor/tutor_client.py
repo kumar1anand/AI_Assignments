@@ -2,7 +2,7 @@ import requests
 url="http://localhost:8000/tutor"
 
 json_data = {
-    "prompt": "Who is MS Dhoni?",}
+    "prompt": "teach me python",}
 
 
 try:
